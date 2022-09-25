@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="login.css">
 </head>
-<body background="Images/LOGIN.jpg">
+<body background="Images/login.webp">
     <!-- Navigation bar -->
 <nav class="navbar bg-light navbar-light navbar-expand-lg navbar sticky-top">
     <a href="index.html" class="navbar-brand"><img src="Images/LOGO GRN.png" style="height:90px;" class="img-fluid"  alt="Logo" title="Logo"></a>
@@ -31,50 +31,48 @@
           <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
         </ul>
       </div>
-      <ul>
-        <a href="signup.html"><button type="button" class="btn btn-outline-primary btn-lg">Sign Up</button></a>
-      </ul>
-    </div>
   </nav>
   <!-- End Navigation bar -->
-
-  <section class="vh-100 pt-5">
-  <div class="container-fluid py-1 h-10">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-        <!-- <div class="col col-xl-10 mt-5"> -->
-          <div class="card" style="border-radius:1rem ;">
-            <div class="row g-0 pt-2">
-              <div class="col-md-6 col-lg-7 d-flex align-items-center">
-              <div class="card-body p-4 p-lg-5 text-dark">
-            <form>
-                    <div class="d-flex align-items-center mb-3 pb-1">
-                        <span class="h1 fw-bold mb-0">User Login</span>
-                      </div>
-                        <br> 
-                        <div class="form-outline mb-4">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                      <div class="form-outline mb-4">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                      <div class="pt-1 mb-4">
-                    <button type="submit" class="btn btn-primary btn-lg" style="margin-top:20px;">Login</button>
-                  </div>
-                  <a class="small text-muted" href="#!">Forgot password?</a>
-                  <br>
-                  <a href="#!" class="small text-muted">Terms of use,</a>
-                  <a href="#!" class="small text-muted">Privacy policy</a>
-            </form>
-          </div>
+ 
+  <section class="vh-100 pt-3">
+    <div class="container-fluid py-1 h-10">
+      <div class="row d-flex justify-content-center align-items-center h-100">  
+              <div class="row g-0 pt-2">
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-dark">
+  <div class="wrapper">
+    <header>Login Form</header>
+    <form action="profile.html">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
       </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+          title="Must contain at least one number and one uppercase and lowercase letter, 
+          and at least 8 or more characters">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
       </div>
-      </div>
-      </div>
-      </div>
-      </div>
-  </section>
+      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <input type="submit" value="Login">
+    </form>
+    <div class="sign-txt">Not yet member? <a href="signup.html">Signup now</a></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+  
 
   <footer class="page-footer font-small cyan darken-3">
 
@@ -126,6 +124,9 @@
     <!-- Copyright -->
   
   </footer>
+
+
+  <script src="login.js"></script>
     
 </body>
 </html>
